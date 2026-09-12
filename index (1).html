@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chauhan Family - Griha Pravesh</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<p>|| Shree Ganeshay Namah ||</p>
+<h1>GRIHA PRAVESH</h1>
+<p>Sanjeevni Shubharambh</p>
+</div>
+<div class="content">
+<div class="house" onclick="blast()">🏠🚪</div>
+<p>Tap the door to open</p>
+<h2 style="color:#7a1e1e">Chauhan Family</h2>
+<div class="names">Dolly Chauhan<br>&<br>Dheerendra Chauhan</div>
+<p>Cordially invite you to the housewarming ceremony of our new home</p>
+<hr>
+<h3>📍 Sanjeevni - 111</h3>
+<p>Sanjeevni Shubharambh, House No. 111, Jaipur, Rajasthan</p>
+<h3>📅 Tuesday, 20th October 2026</h3>
+<p>10:00 AM onwards • Puja, Havan & Lunch</p>
+<button class="btn gold" onclick="blast()">🎉 Click to Bless Us</button>
+<button class="btn outline" onclick="window.open('https://wa.me/?text='+encodeURIComponent('You are cordially invited to Griha Pravesh of Chauhan Family - 20 Oct 2026 at Sanjeevni 111 Jaipur. Join us! 🏠🙏 '+window.location.href))">Share on WhatsApp</button>
+<a href="https://maps.google.com/?q=Sanjeevni+Jaipur+Rajasthan" target="_blank"><button class="btn outline">📍 Open Location on Map</button></a>
+<iframe src="https://maps.google.com/maps?q=Sanjeevni%20Jaipur&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+<p style="font-size:13px;color:#666;margin-top:20px">With love and gratitude,<br><b>Chauhan Family</b></p>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script>
+function blast(){
+ confetti({particleCount:150,spread:80,origin:{y:0.6},colors:['#D97706','#7a1e1e','#FFD700']});
+ setTimeout(()=>confetti({particleCount:100,spread:120}),300);
+}
+window.onload=blast;
+</script>
+</body>
+</html>
